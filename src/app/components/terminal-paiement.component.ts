@@ -4,10 +4,16 @@ import { ButtonComponent } from './ux/button/button.component';
 import { CommonModule } from '@angular/common';
 
 import { DetailCommand } from '../models/CommandInterface';
+import { PaymentComponent } from './payment/payment.component';
 
 @Component({
   selector: 'app-terminal-paiement',
-  imports: [ButtonComponent, CommonModule],
+  imports: [
+    ButtonComponent,
+    CommonModule,
+    TerminalPaiementComponent,
+    PaymentComponent,
+  ],
   templateUrl: './terminal-paiement.component.html',
   styleUrl: './terminal-paiement.component.css',
 })
